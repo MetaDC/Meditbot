@@ -18,16 +18,19 @@
     <!-- Title -->
     <title>Medibot</title>
 
-    <!-- Meta Description -->
+    <!-- SEO -->
+    <meta
+      name="title"
+      content="Medibot UK - Automated Prescription Dispensing"
+    />
     <meta
       name="description"
-      content="MediBot - Revolutionising the Way Pharmacies Dispense!
-"
+      content="Fast and Hassle-Free Prescription Dispensing. Let MediBot handle the prescriptions while your team focuses on patient care."
     />
 
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://medibot-final.netlify.app/" />
+    <meta property="og:url" content="https://medibot.uk/" />
     <meta
       property="og:title"
       content="Medibot UK - Automated Prescription Dispensing"
@@ -38,27 +41,26 @@
     />
     <meta
       property="og:image"
-      content="https://medibot-final.netlify.app/img/medibot-logo.png"
+      content="https://medibot.uk/img/medibot-logo.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://medibot-final.netlify.app" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://medibot.uk/" />
     <meta
-      property="twitter:title"
+      name="twitter:title"
       content="Medibot UK - Automated Prescription Dispensing"
     />
     <meta
-      property="twitter:description"
+      name="twitter:description"
       content="Fast and Hassle-Free Prescription Dispensing. Let MediBot handle the prescriptions while your team focuses on patient care."
     />
     <meta
-      property="twitter:image"
-      content="https://medibot-final.netlify.app/img/medibot-logo.png"
+      name="twitter:image"
+      content="https://medibot.uk/img/medibot-logo.png"
     />
-
     <!-- Favicon -->
     <link rel="icon" href="img/hero/medibot-logo-icon.png" />
     <!-- Google Fonts -->
@@ -120,6 +122,19 @@
         margin-left: 80px;
       }
     }
+    section[id] {
+      scroll-margin-top: 120px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      section[id] {
+        scroll-margin-top: 100px;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
   <body>
     <!-- Preloader -->
@@ -177,20 +192,20 @@
             <div class="col-lg-6 col-md-5 col-12">
               <!-- Contact -->
               <ul class="top-link">
-                <li><a href="#">About</a></li>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <a href="tel:+44 1924 942588"> +44 1924 942588</a>
+                </li>
+                <!-- <li><a href="#">About</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#">FAQ</a></li> -->
               </ul>
               <!-- End Contact -->
             </div>
             <div class="col-lg-6 col-md-7 col-12">
               <!-- Top Contact -->
               <ul class="top-contact">
-                <li>
-                  <i class="fa fa-phone"></i>
-                  <a href="tel:+44 1924 942588"> +44 1924 942588</a>
-                </li>
                 <li>
                   <i class="fa fa-envelope"></i
                   ><a href="mailto:hub-wakefield@outlook.com"
@@ -2006,6 +2021,38 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (!href || href === "#" || href === "#!") return;
+
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              const header = document.querySelector(".header");
+              const headerHeight = header ? header.offsetHeight : 100;
+              const targetPosition =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                headerHeight -
+                20;
+
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              });
+
+              if (window.innerWidth <= 991) {
+                const slicknavBtn = document.querySelector(".slicknav_btn");
+                if (slicknavBtn) slicknavBtn.click();
+              }
+            }
+          });
+        });
+      });
+    </script>
   </body>
 
   <!-- Mirrored from mediplus-html.vercel.app/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Jul 2025 06:21:46 GMT -->
