@@ -16,11 +16,51 @@
     />
 
     <!-- Title -->
-    <title>Medibot UK</title>
+    <title>Medibot</title>
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="MediBot - Revolutionising the Way Pharmacies Dispense!
+"
+    />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://medibot-final.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Medibot UK - Automated Prescription Dispensing"
+    />
+    <meta
+      property="og:description"
+      content="Fast and Hassle-Free Prescription Dispensing. Let MediBot handle the prescriptions while your team focuses on patient care."
+    />
+    <meta
+      property="og:image"
+      content="https://medibot-final.netlify.app/img/medibot-logo.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://medibot-final.netlify.app" />
+    <meta
+      property="twitter:title"
+      content="Medibot UK - Automated Prescription Dispensing"
+    />
+    <meta
+      property="twitter:description"
+      content="Fast and Hassle-Free Prescription Dispensing. Let MediBot handle the prescriptions while your team focuses on patient care."
+    />
+    <meta
+      property="twitter:image"
+      content="https://medibot-final.netlify.app/img/medibot-logo.png"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png" />
-
+    <link rel="icon" href="img/hero/medibot-logo-icon.png" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
@@ -56,6 +96,31 @@
 
     <link rel="stylesheet" id="colors" />
   </head>
+  <style>
+    /* Mobile Navigation Styling */
+    .mobile-nav {
+      display: none;
+    }
+
+    @media only screen and (max-width: 991px) {
+      .mobile-nav {
+        display: block;
+        width: 100%;
+      }
+
+      .main-menu {
+        display: none;
+      }
+
+      /* SlickNav Styling */
+
+      .slicknav_nav li {
+        /* border-bottom: 1px solid #eee; */
+        width: 100%;
+        margin-left: 80px;
+      }
+    }
+  </style>
   <body>
     <!-- Preloader -->
     <div class="preloader">
@@ -122,10 +187,15 @@
             <div class="col-lg-6 col-md-7 col-12">
               <!-- Top Contact -->
               <ul class="top-contact">
-                <li><i class="fa fa-phone"></i>+000 1234 56789</li>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <a href="tel:+44 1924 942588"> +44 1924 942588</a>
+                </li>
                 <li>
                   <i class="fa fa-envelope"></i
-                  ><a href="mailto:">medibot@gmail.com</a>
+                  ><a href="mailto:hub-wakefield@outlook.com"
+                    >hub-wakefield@outlook.com</a
+                  >
                 </li>
               </ul>
               <!-- End Top Contact -->
@@ -169,7 +239,7 @@
                         </ul> -->
                       </li>
                       <li>
-                        <a href="#"
+                        <a href="#aboutSection"
                           >About
                           <!-- <i class="icofont-rounded-down"></i
                         > -->
@@ -182,7 +252,7 @@
                         </ul> -->
                       </li>
                       <li>
-                        <a href="#">Solutions</a>
+                        <a href="#solutionSection">Solutions</a>
                         <!-- <ul class="dropdown">
                           <li><a href="service.html">Service</a></li>
                           <li>
@@ -190,9 +260,9 @@
                           </li>
                         </ul> -->
                       </li>
-                      <li>
+                      <!-- <li>
                         <a href="#">Why Medibot </a>
-                        <!-- <ul class="dropdown">
+                        <ul class="dropdown">
                           <li><a href="about.html">About Us</a></li>
                           <li><a href="appointment.html">Appointment</a></li>
                           <li><a href="time-table.html">Time Table</a></li>
@@ -203,8 +273,8 @@
                           <li><a href="faq.html">Faq</a></li>
                           <li><a href="mail-success.html">Mail Success</a></li>
                           <li><a href="404.html">404 Error</a></li>
-                        </ul> -->
-                      </li>
+                        </ul>
+                      </li> -->
                       <!-- <li>
                         <a href="#"
                           >Blogs <i class="icofont-rounded-down"></i
@@ -214,9 +284,9 @@
                           <li><a href="blog-single.html">Blog Details</a></li>
                         </ul>
                       </li> -->
-                      <li><a href="#">Our Process</a></li>
-                      <li><a href="#">Gallery</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="#ourProcessSection">Our Process</a></li>
+                      <li><a href="#gallerySection">Gallery</a></li>
+                      <li><a href="#footer">Contact</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -241,7 +311,7 @@
         <!-- Start Single Slider -->
         <div
           class="single-slider"
-          style="background-image: url('img/hero/slider-1.webp')"
+          style="background-image: url('img/hero/slider2.webp')"
         >
           <div class="container">
             <div class="row">
@@ -270,7 +340,7 @@
         <!-- Start Single Slider -->
         <div
           class="single-slider"
-          style="background-image: url('img/hero/slider-2.webp')"
+          style="background-image: url('img/hero/slider2.webp')"
         >
           <div class="container">
             <div class="row">
@@ -297,7 +367,7 @@
         </div>
         <!-- Start End Slider -->
         <!-- Start Single Slider -->
-        <div
+        <!-- <div
           class="single-slider"
           style="background-image: url('img/slider3.jpg')"
         >
@@ -322,19 +392,19 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- End Single Slider -->
       </div>
     </section>
     <!--/ End Slider Area -->
     <!-- Start Why choose -->
-    <section class="why-choose section">
+    <section class="why-choose section" id="aboutSection">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>Revolutionising the Way Pharmacies Dispense!</h2>
               <img src="img/section-img.png" alt="#" />
+              <h2>Revolutionising the Way Pharmacies Dispense!</h2>
               <p>
                 Automating prescription fulfilment so pharmacists can focus on
                 care, not paperwork.
@@ -392,7 +462,7 @@
           </div>
           <div class="col-lg-6 col-12">
             <div class="choose-right">
-              <img src="img/about/medibot-about.webp" alt="#" />
+              <!-- <img src="img/about/medibot-about.webp" alt="#" /> -->
             </div>
             <!-- <div class="choose-right">
               <div class="video-image">
@@ -426,7 +496,7 @@
             <div class="single-fun">
               <i class="icofont icofont-home"></i>
               <div class="content">
-                <span class="counter">1200+</span>
+                <span class="counter">1200</span>
                 <p>Partner Pharmacies</p>
               </div>
             </div>
@@ -437,7 +507,7 @@
             <div class="single-fun">
               <i class="icofont icofont-user-alt-3"></i>
               <div class="content">
-                <span class="counter">98%</span>
+                <span class="counter">98</span>
                 <p>Accuracy Rate</p>
               </div>
             </div>
@@ -448,7 +518,7 @@
             <div class="single-fun">
               <i class="icofont-simple-smile"></i>
               <div class="content">
-                <span class="counter">15,000+</span>
+                <span class="counter">15,000</span>
                 <p>Prescriptions Monthly</p>
               </div>
             </div>
@@ -459,7 +529,7 @@
             <div class="single-fun">
               <i class="icofont icofont-table"></i>
               <div class="content">
-                <span class="counter">10+</span>
+                <span class="counter">10</span>
                 <p>Years of Innovation</p>
               </div>
             </div>
@@ -470,13 +540,13 @@
     </div>
     <!--/ End Fun-facts -->
     <!-- Start service -->
-    <section class="services section">
+    <section class="services section" id="solutionSection">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>How MediBot Works</h2>
               <img src="img/section-img.png" alt="#" />
+              <h2>How MediBot Works</h2>
               <p>
                 Smart, accurate, and efficient prescription dispensing for your
                 pharmacy.
@@ -557,10 +627,13 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 col-12">
             <div class="content">
-              <h2>Do you need Emergency Medical Care? Call @ 1234 56789</h2>
+              <h2>
+                Need Fast & Reliable Prescription Support? Call @
+                <a href="tel:+441924942588"> +44 1924 942588</a>
+              </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                porttitor dictum turpis nec gravida.
+                Let MediBot handle your prescription dispensing with precision
+                and care.
               </p>
               <div class="button">
                 <a href="#" class="btn">Contact Now</a>
@@ -654,17 +727,18 @@
     <!--/End Start schedule Area -->
     <br /><br />
     <!-- Start Feautes -->
-    <section class="Feautes section" style="padding-bottom: 0px">
+    <section
+      class="Feautes section"
+      style="padding-bottom: 0px"
+      id="ourProcessSection"
+    >
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>is simply dummy text of the printing and typesetting</h2>
               <img src="img/section-img.png" alt="#" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
-                aliquet. pretiumts
-              </p>
+              <h2>Our Process</h2>
+              <p>Simplifying Prescription Dispensing for Modern Pharmacies.</p>
             </div>
           </div>
         </div>
@@ -675,10 +749,11 @@
               <div class="signle-icon">
                 <i class="icofont icofont-ambulance-cross"></i>
               </div>
-              <h3>Simply Dummy</h3>
+              <h3>Prescription Transfer</h3>
               <p>
-                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                vulputate.
+                Pharmacists clinically review and approve prescriptions before
+                securely sending them to MediBot for automated dispensing and
+                packaging.
               </p>
             </div>
             <!-- End Single features -->
@@ -689,10 +764,11 @@
               <div class="signle-icon">
                 <i class="icofont icofont-medical-sign-alt"></i>
               </div>
-              <h3>Simply Dummy</h3>
+              <h3>Smart Verification</h3>
               <p>
-                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                vulputate.
+                Prescriptions are precisely picked by robots and scanned by
+                humans for the most accurate dispensing, including expiry checks
+                and label review.
               </p>
             </div>
             <!-- End Single features -->
@@ -703,10 +779,11 @@
               <div class="signle-icon">
                 <i class="icofont icofont-stethoscope"></i>
               </div>
-              <h3>Simply Dummy</h3>
+              <h3>Pack & Collect</h3>
               <p>
-                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                vulputate.
+                MediBot carefully packs and returns all prescriptions to your
+                pharmacy branch, ready for your patients to safely collect the
+                next working day.
               </p>
             </div>
             <!-- End Single features -->
@@ -717,16 +794,16 @@
     <!--/ End Feautes -->
 
     <!-- Start portfolio -->
-    <section class="portfolio section">
+    <section class="portfolio section" id="gallerySection">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>Is Simply Dummy Text Of The Printing And Typeset</h2>
               <img src="img/section-img.png" alt="#" />
+              <h2>Inside the MediBot Experience</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
-                aliquet. pretiumts
+                Explore our automated systems, smart technology, and pharmacy
+                partnerships delivering accuracy every day.
               </p>
             </div>
           </div>
@@ -737,36 +814,36 @@
           <div class="col-lg-12 col-12">
             <div class="owl-carousel portfolio-slider">
               <div class="single-pf">
-                <img src="img/pf1.jpg" alt="#" />
-                <a href="#" class="btn">View Details</a>
+                <img src="img/about/gallery-dummy.webp" alt="#" />
+                <a href="#" class="btn">View</a>
               </div>
               <div class="single-pf">
-                <img src="img/pf2.jpg" alt="#" />
-                <a href="#" class="btn">View Details</a>
+                <img src="img/about/gallery-dummy.webp" alt="#" />
+                <a href="#" class="btn">View</a>
               </div>
               <div class="single-pf">
-                <img src="img/pf3.jpg" alt="#" />
-                <a href="#" class="btn">View Details</a>
+                <img src="img/about/gallery-dummy.webp" alt="#" />
+                <a href="#" class="btn">View</a>
               </div>
               <div class="single-pf">
-                <img src="img/pf4.jpg" alt="#" />
-                <a href="#" class="btn">View Details</a>
+                <img src="img/about/gallery-dummy.webp" alt="#" />
+                <a href="#" class="btn">View</a>
               </div>
               <div class="single-pf">
-                <img src="img/pf1.jpg" alt="#" />
-                <a href="#" class="btn">View Details</a>
+                <img src="img/about/gallery-dummy.webp" alt="#" />
+                <a href="#" class="btn">View</a>
               </div>
               <div class="single-pf">
-                <img src="img/pf2.jpg" alt="#" />
-                <a href="#" class="btn">View Details</a>
+                <img src="img/about/gallery-dummy.webp" alt="#" />
+                <a href="#" class="btn">View</a>
               </div>
               <div class="single-pf">
-                <img src="img/pf3.jpg" alt="#" />
-                <a href="#" class="btn">View Details</a>
+                <img src="img/about/gallery-dummy.webp" alt="#" />
+                <a href="#" class="btn">View</a>
               </div>
               <div class="single-pf">
-                <img src="img/pf4.jpg" alt="#" />
-                <a href="#" class="btn">View Details</a>
+                <img src="img/about/gallery-dummy.webp" alt="#" />
+                <a href="#" class="btn">View</a>
               </div>
             </div>
           </div>
@@ -1636,15 +1713,15 @@
     <!-- End Appointment -->
 
     <!-- Start Newsletter Area -->
-    <section class="newsletter section">
+    <!-- <section class="newsletter section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 col-12">
             <div class="subscribe-text">
-              <h6>Sign up for Loremipsum</h6>
+              <h6>Looking for Fast and Hassle-Free Dispensing?</h6>
               <p class="">
-                Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br />
-                homero alterum.
+                Let MediBot handle the prescriptions while your team focuses on
+                patient care and pharmacy growth.
               </p>
             </div>
           </div>
@@ -1664,8 +1741,41 @@
                   required=""
                   type="email"
                 />
-                <button class="btn">Book Now</button>
+
+                <button class="btn">
+                  Book a Demo <span class="fa fa-arrow-right"></span>
+                </button>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="newsletter section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="subscribe-text">
+              <h6>Looking for Fast and Hassle-Free Dispensing?</h6>
+              <p class="">
+                Let MediBot handle the prescriptions while your team focuses on
+                patient care and pharmacy growth.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="subscribe-form">
+              <div
+                class="newsletter-inner"
+                style="display: flex; gap: 15px; flex-wrap: wrap"
+              >
+                <button class="btn" style="flex: 1; min-width: 150px">
+                  Contact Us
+                </button>
+                <button class="btn" style="flex: 1; min-width: 150px">
+                  Book a Demo <span class="fa fa-arrow-right"></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1703,7 +1813,9 @@
                     <a href="#"><i class="icofont-pinterest"></i></a>
                   </li> -->
                   <li>
-                    <a href="#"><i class="icofont-instagram"></i></a>
+                    <a href="https://www.instagram.com/medibot_uk"
+                      ><i class="icofont-instagram"></i
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -1786,11 +1898,21 @@
             <div class="col-lg-3 col-md-6 col-12">
               <div class="single-footer">
                 <h2>Contact</h2>
-                <p><a href="tel:01132862795"> 0113 286 2795</a></p>
                 <p>
-                  <a href="mailto:info@medibot.co.uk"> info@medibot.co.uk </a>
+                  <span class="fa fa-phone mr-2"></span>
+                  <a href="tel:+44 1924 942588">+44 1924 942588 </a>
                 </p>
-                <p>Church Lane Swillington Leeds LS26 8DY</p>
+                <br />
+                <p>
+                  <span class="fa fa-envelope mr-2"></span>
+                  <a href="mailto:hub-wakefield@outlook.com">
+                    hub-wakefield@outlook.com</a
+                  >
+                </p>
+                <br />
+                <p>
+                  Unit 8, Eagle Point, Telford Way, Wakefield, United Kingdom
+                </p>
                 <!-- <ul class="time-sidual">
                   <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
                   <li class="day">Saturday <span>9.00-18.30</span></li>

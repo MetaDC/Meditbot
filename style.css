@@ -972,7 +972,7 @@ body {
 .why-choose .choose-right {
   height: 100%;
   width: 100%;
-  background-image: url("img/video-bg.jpg");
+  background-image: url("img/about/medibot-about.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4605,7 +4605,6 @@ body {
     margin-left: 18px;
     padding-right: 36px;
   }
-
 }
 @media only screen and (max-width: 767px) {
   .rtl .header .top-link,
