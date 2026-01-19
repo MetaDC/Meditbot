@@ -1430,7 +1430,7 @@ body {
   border-radius: 3px;
   margin: 0 0 0 -52px;
   margin-top: 49px;
-  box-sizing: ;
+  box-sizing:;
 }
 .testimonials .owl-dots .owl-dot {
   display: inline-block;
@@ -3544,6 +3544,13 @@ body {
 }
 .newsletter .subscribe-form {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .newsletter .subscribe-form {
+    justify-content: center;
+  }
 }
 .newsletter .common-input {
   height: 60px;
