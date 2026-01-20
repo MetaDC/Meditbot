@@ -947,9 +947,11 @@ body {
 .why-choose .choose-left .list {
 }
 .why-choose .choose-left .list li {
-  color: #868686;
+  color: #5f5f5f;
   margin-bottom: 12px;
+  line-height: 1.6;
 }
+
 .why-choose .choose-left .list li:last-child {
   margin-bottom: 0px;
 }
@@ -1302,8 +1304,10 @@ body {
   color: #1a76d1;
 }
 .services .single-service p {
-  color: #868686;
+  color: #5f5f5f;
+  line-height: 1.6;
 }
+
 /*-- Service Details --*/
 .services-details-img {
   margin-bottom: 50px;
@@ -2751,7 +2755,7 @@ body {
   border: 1px solid #eee;
   text-transform: capitalize;
   padding: 0px 18px;
-  color: #999;
+  color: #333;
   font-size: 14px;
   font-weight: 400;
   border-radius: 4px;

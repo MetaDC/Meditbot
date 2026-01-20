@@ -36,7 +36,7 @@
 .nice-select:active,
 .nice-select.open,
 .nice-select:focus {
-  border-color: #999;
+  border-color: #333;
 }
 
 .nice-select:after {
@@ -77,7 +77,7 @@
 
 .nice-select.disabled {
   border-color: #ededed;
-  color: #999;
+  color: #333;
   pointer-events: none;
 }
 
@@ -138,9 +138,12 @@
   -webkit-transform: scale(0.75) translateY(-21px);
   -ms-transform: scale(0.75) translateY(-21px);
   transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+  -webkit-transition:
+    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
     opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition:
+    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+    opacity 0.15s ease-out;
   z-index: 9;
 }
 
@@ -173,7 +176,7 @@
 
 .nice-select .option.disabled {
   background-color: transparent;
-  color: #999;
+  color: #333;
   cursor: default;
 }
 
